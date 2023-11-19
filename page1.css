@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: rgb(113, 113, 113);
+}
+
+footer
+{
+    text-align:center;
+    width:100%;
+    margin-top: 50px;
+    object-position: top;
+    background-color: rgb(74, 74, 74);
+    border: solid;
+}
+
+header{
+    display: flex;
+    text-align: center;
+    background-color: rgb(74, 74, 74);
+    border: solid;
+}
+
+h1{
+    font-size: 50px;
+    font-family:system-ui;
+    display:block;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+h2{
+    font-size: 50px;
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.description{
+    font-size: 20px;
+    text-align: center;
+    border: solid;
+    margin-left: 15vw;
+    margin-right: 22vw;
+    margin-top: -3vw;
+    }
+    
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.flex2{
+    display: flex;
+    align-items: center;
+    margin: 60px;
+    justify-content: space-evenly;
+    border: solid;
+}
+
+
+.image1{
+    width: 33vw;
+    margin-left: 40%;
+}
+
+.image2{
+    width: 20vw;
+}
+
+.image3{
+    width: 20vw;
+}
+.image4{
+    width: 14vw;
+}
+
+.image5{
+    height: 8vw;
+}
+
+.image6{
+    height: 9vw;
+}
+
+.image7{
+    height: 8vw;
+}
+
+.image8{
+    height: 8vw;
+}
+
+.flexFooter{
+    display: flex;
+    justify-content: center;
+}  
+
+@media screen and (max-width:800px){
+    .description{
+        font-size: 10px;
+        margin-right: 8vw;
+    }
+
+    .image1{
+        width: 35vw
+    }
+    
+    h2{
+        font-size: 35px;
+    }
+
+} 
