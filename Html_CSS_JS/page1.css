@@ -1,0 +1,226 @@
+/* Définir des règles de couleur qu'on changera dans un dark mode (boléen)*/
+:root{  
+    --white : #f1f1f1;
+    --dark : #262626;
+}
+
+
+*{
+    margin: 0;
+}
+
+
+.formulaire{
+    margin-top: 5vh;
+    margin-right: 87vh
+}
+
+
+
+body{
+    background-color: var(--dark);
+}
+
+.soleil{
+    width: 7vh;
+}
+
+
+
+
+header{
+    display: flex;
+    text-align: center;
+    background-color: rgb(74, 74, 74);
+    border: solid;
+}
+
+h1{
+    justify-content: center;
+    font-size: 50px;
+    font-family:system-ui;
+    display:block;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #f1f1f1;
+}
+
+
+p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.description{
+    font-size: 20px;
+    text-align: center;
+    border: solid;
+    margin-left: 15vw;
+    margin-right: 22vw;
+    margin-top: -3vw;
+    color: var(--white)
+    }
+    
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.flex2{
+    display: flex;
+    align-items: center;
+    margin: 60px;
+    justify-content: space-evenly;
+    background-color: rgb(74, 74, 74);
+    border: solid;
+}
+
+
+.image1{
+    width: 33vw;
+    margin-left: 40%;
+}
+
+.image2{
+    width: 20vw;
+}
+
+.image3{
+    width: 20vw;
+}
+.image4{
+    width: 14vw;
+}
+
+
+.image6{
+    height: 13vw;
+}
+
+.swiper{
+    margin-left: 1vh;
+    margin-top: 1vh;
+}
+
+
+.bodyTab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36vh;
+}
+
+.tabBox{
+    width: 600px;
+    background-color: #4a4a4a ;
+    padding: 30px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1) ;
+    border-radius: 20px;
+}
+
+.tab{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid rgb(91, 255, 41);
+    position: relative;
+}
+
+.tab .boutonTab{
+    font-size: 18px;
+    font-weight: 600;
+    color: #726a6a;
+    background: none;
+    border: none;
+    padding: 18px;
+    cursor: pointer;
+}
+
+.line{
+    position: absolute;
+    top: 55px;
+    left: 50px;
+    width: 90px;
+    height: 5px;
+    background-color: #555357;
+    border-radius: 10px ;
+    transition: all .3s ease-in-out;
+}
+
+.tab .boutonTab.active{
+    color: #6b18df;
+
+}
+
+.contentBox{
+    padding: 20px;
+}
+
+.contentBox .tabContent{
+    display: none;
+    animation: moving .5s ease; /* Animation DES CONTENEURS quand on passe de conteneur en conteneur */
+}
+
+/* Animation DES TEXTES quand on passe de conteneur en conteneur */
+@keyframes moving{
+    from{transform : translateX(50px); opacity: 0;}
+    to{transform : translateX(0px); opacity: 1;}
+
+}
+
+.contentBox .tabContent.active{
+    display: block;
+}
+
+.contentBox .tabContent h2{
+    padding: 10px;
+}
+
+
+.flexFooter{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    margin-top: 50px;
+    object-position: center;
+    background-color: #4a4a4a;
+    border: solid;
+}  
+
+
+/* Responsive */
+@media screen and (max-width:800px){  
+    .description{
+        font-size: 10px;
+        margin-right: 8vw;
+    }
+
+    .image1{
+        width: 35vw
+    }
+    
+    h2{
+        font-size: 35px;
+    }
+
+} 
+
+.dark{
+    color : #ffffff;
+    background-color: #000000;
+}
+
+.changeTheme {
+    margin-left: 0.5em;
+    margin-left: -3vh;
+    width: 16vh;
+    height: 13vh;
+    background-color: rgb(54, 54, 54);
+    cursor: pointer;
+}

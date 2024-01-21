@@ -1,0 +1,124 @@
+<!-- Prototype -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fourmulaire.css">
+</head>
+<body>
+  <div class="container">
+    <form action=""  method="post" enctype="multipart/form-data">
+        
+        <h1>Me contacter</h1>
+        <ul>
+          <li>
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="user_name" />
+            <div class="error"> </div>
+          </li>
+          <li>
+            <label for="mail">E-mail</label>
+            <input type="email" id="email" name="user_mail" />
+          </li>
+          <li>
+            <label for="msg">Message</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </li>
+          <li>
+            <p class="Conteneurradio">
+              <h1>Motif de la demande</h1>
+              Employeur: <input type="radio" id="motif1"/>
+              <br />
+              Ecole: <input type="radio" id="motif2"/>
+              <br />
+              Autre: <input type="radio" id="motif3"/>
+            </p>
+          </li>
+        </ul>
+       
+        <label class="contentProfil">Mon profil vous intéresse ?:</label>
+
+        <select name="profilContent" id="profilContent">
+          <option value="">--Choisissez une option--</option>
+          <option value="dog">Oui</option>
+          <option value="cat">Non</option>
+          <option value="hamster">Je ne sais pas encore</option>
+        </select>
+        
+            <button type="submit">Envoyé</button>
+      </form>
+  </div>
+      <script src="formulaire.js"> </script>
+  
+</body>
+</html> -->
+
+
+
+
+<!-- Version finale (utilisé sur internet) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="fourmulaire.css">
+</head>
+<body>
+    <div class="container">
+        <form id="form" action="/">
+            <h1>Se connecter</h1>
+            <div class="input-control">
+                <label for="username">Nom d'utilisateur</label>
+                <input id="username" name="username" type="text">
+                <div class="error"></div>
+            </div>
+            
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Mot de passe</label>
+                <input id="password"name="password" type="password">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password2">Confirmer le mot de passe</label>
+                <input id="password2"name="password2" type="password">
+                <div class="error"></div>
+            </div>
+            
+            <div class="accordion-container">
+              <div class="accordion-header">
+                <i class="fafa-angle-right"></i> Lorem1 
+              </div>
+              <div class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget tellus eget ex gravida fringilla. Pellentesque semper augue ac nunc viverra, sit amet aliquam odio hendrerit. Mauris tempus at risus.</div>
+              <div class="accordion-header">
+                <i class="fafa-angle-right"></i> Lorem2 
+              </div>
+              <div class="accordion-content">Duis scelerisque lectus ipsum, in laoreet diam feugiat id. Integer dapibus mauris justo, vel feugiat elit facilisis non. Maecenas ac eros eu arcu volutpat congue vel ut massa. Pellentesque habitant.</div>
+              <div class="accordion-header">
+                <i class="fafa-angle-right"></i> Lorem3 
+              </div>
+              <div class="accordion-content">Nulla a massa massa. Sed ultrices porta nisi, vel eleifend metus volutpat sed. Integer eget urna lorem. Etiam bibendum ante at neque dignissim efficitur. Phasellus iaculis, massa eu porta tincidunt.</div>
+              <div class="accordion-header">
+                <i class="fafa-angle-right"></i> Lorem4
+              </div>
+              <div class="accordion-content">Phasellus faucibus suscipit est id lacinia. Suspendisse ultricies fermentum turpis, non lobortis sapien ultricies a. Integer sodales at sapien ut gravida. Sed pellentesque rhoncus arcu. Vestibulum maximus, felis dictum cursus.</div>
+            </div>
+
+
+            <button type="submit">Valider</button>
+        </form>
+    </div>
+    <script src="formulaire.js"></script>
+    <script src="menuBurger.js"></script>
+</body>
+</html>
